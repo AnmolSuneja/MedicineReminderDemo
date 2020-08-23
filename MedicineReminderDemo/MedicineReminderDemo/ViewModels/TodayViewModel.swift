@@ -23,7 +23,7 @@ class TodayViewModel {
         let cal = Calendar.current
         let hour = cal.dateComponents([.hour], from: Date()).hour!
         switch hour {
-        case 4 ... 10:
+        case 4 ... 11:
             return TextConstants.MORNING_GREET
         case 12 ... 15:
             return TextConstants.AFTERNOON_GREET
