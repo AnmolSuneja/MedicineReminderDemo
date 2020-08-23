@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TBA-ln-QN6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yc3-Gn-LWD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TBA-ln-QN6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="hH2-lj-CyP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="szK-Lb-gWP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ed-SZ-V7R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1244" y="164"/>
+        </scene>
+        <!--Today View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TodayViewController" customModule="ReminderDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Afternoon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaD-qe-PoH">
+                                <rect key="frame" x="16" y="40" width="382" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="HTw-lb-R4T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNR-6b-sBa">
+                                <rect key="frame" x="16" y="139" width="382" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFU-EY-PTH">
+                                <rect key="frame" x="16" y="258" width="382" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcV-0B-1qX">
+                                <rect key="frame" x="107" y="699" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y0R-Ug-74h"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="xXB-Q4-LAt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Log Medicine">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnMedicineTakenTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="Wo9-CY-6Y8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kaD-qe-PoH" secondAttribute="trailing" constant="16" id="8We-hE-BuT"/>
+                            <constraint firstItem="kaD-qe-PoH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="CTc-03-n0G"/>
+                            <constraint firstItem="gcV-0B-1qX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xFU-EY-PTH" secondAttribute="bottom" constant="16" id="Dqk-1Q-XiJ"/>
+                            <constraint firstItem="xFU-EY-PTH" firstAttribute="trailing" secondItem="kaD-qe-PoH" secondAttribute="trailing" id="Edd-Ek-6Ey"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gcV-0B-1qX" secondAttribute="bottom" constant="25" id="FdV-BJ-gf3"/>
+                            <constraint firstItem="xFU-EY-PTH" firstAttribute="top" secondItem="RNR-6b-sBa" secondAttribute="bottom" constant="70" id="Jlb-UJ-qkv"/>
+                            <constraint firstItem="RNR-6b-sBa" firstAttribute="trailing" secondItem="kaD-qe-PoH" secondAttribute="trailing" id="KxV-xj-AnG"/>
+                            <constraint firstItem="xFU-EY-PTH" firstAttribute="leading" secondItem="kaD-qe-PoH" secondAttribute="leading" id="Mov-fx-vfb"/>
+                            <constraint firstItem="RNR-6b-sBa" firstAttribute="top" secondItem="kaD-qe-PoH" secondAttribute="bottom" constant="50" id="QUM-2W-cFW"/>
+                            <constraint firstItem="kaD-qe-PoH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SLH-RA-1aI"/>
+                            <constraint firstItem="gcV-0B-1qX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T8Z-ek-Hdh"/>
+                            <constraint firstItem="RNR-6b-sBa" firstAttribute="leading" secondItem="kaD-qe-PoH" secondAttribute="leading" id="gSM-Tm-chN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SLf-Nh-iqJ"/>
+                    <connections>
+                        <outlet property="btnMedicineTaken" destination="gcV-0B-1qX" id="Oi3-FO-KnB"/>
+                        <outlet property="labelGreeting" destination="kaD-qe-PoH" id="FnN-Kh-6Jh"/>
+                        <outlet property="labelScore" destination="xFU-EY-PTH" id="x4Q-8b-OpG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375.36231884057975" y="172.76785714285714"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="lmd-Bv-gae">
+            <objects>
+                <viewController storyboardIdentifier="HistoryViewController" automaticallyAdjustsScrollViewInsets="NO" id="M1E-Sq-IKp" customClass="HistoryViewController" customModule="ReminderDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zj9-Yv-gwb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AHX-Ud-NwD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uWZ-Tl-VEd" firstAttribute="bottom" secondItem="AHX-Ud-NwD" secondAttribute="bottom" id="06N-XD-NLY"/>
+                            <constraint firstItem="uWZ-Tl-VEd" firstAttribute="trailing" secondItem="AHX-Ud-NwD" secondAttribute="trailing" id="1wB-Jf-OQD"/>
+                            <constraint firstItem="AHX-Ud-NwD" firstAttribute="top" secondItem="uWZ-Tl-VEd" secondAttribute="top" id="iov-hp-EQ7"/>
+                            <constraint firstItem="AHX-Ud-NwD" firstAttribute="leading" secondItem="uWZ-Tl-VEd" secondAttribute="leading" id="tfW-f1-chM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uWZ-Tl-VEd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m2V-TU-tHk"/>
+                    <connections>
+                        <outlet property="tableViewHistory" destination="AHX-Ud-NwD" id="7JX-Oi-tH7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CnU-tc-7Tw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="173"/>
+        </scene>
+    </scenes>
+</document>
